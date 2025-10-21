@@ -24,7 +24,6 @@ installCore() {
 # -g
 addGitCred() {
 	gitCredQuestion
-    
 }
 
 # -k
@@ -38,7 +37,7 @@ installSignal(){
 
 installDwAgnet(){
 	PATHName= pwd
-	cd ~/Installers
+	cd $ENVDIR
 	mkdir dwAgent
 	cd dwAgent
 	wget "https://www.dwservice.net/download/dwagent.sh"
