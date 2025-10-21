@@ -24,7 +24,7 @@ installCore() {
 # -g
 addGitCred() {
 	gitCredQuestion
-    make-GitCred
+    
 }
 
 # -k

@@ -97,6 +97,8 @@ gitCredQuestion(){
     esac
     done
     echo start doing stuff...
+	make-GitCred $login $mail
+	
 }
 
 
