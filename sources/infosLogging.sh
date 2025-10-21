@@ -101,7 +101,8 @@ gitCredQuestion(){
 
 usage(){ 
     cat << EOF
-usage: $0 [-h] [-a] [-b] [-c] [-d] [-g] [-k] [-r] [-s] [-v]
+usage: $0 [-h | -?] | [-a] [-b] [-c] [-d] [-g] [-k] [-r] [-s] [-v] |
+[-abcdgkrsv]
 
 This script install some core programs for developers work with javascript.
 

@@ -3,11 +3,9 @@
 
 Automating the creation and updating of my development environment on a fresh or used Linux Mint installation.
 
-![Static Badge](https://img.shields.io/badge/Linux-Mint%20xfce-green)
-![Static Badge](https://img.shields.io/badge/IDE-vsCode-ex?style=plastic&color=blue)
+![Static Badge](https://img.shields.io/badge/Linux%20Mint%20xfce-22.1-ex?style=plastic&logo=linux&logoColor=%2343E55E&labelColor=%23000&color=%2343E55E)
+![Static Badge](https://img.shields.io/badge/IDE%20vsCode-1.105.1-ex?style=plastic&color=blue&labelColor=%23000)
 ![Static Badge](https://img.shields.io/badge/bash-5.2.21-ex?style=plastic&logo=gnubash&logoColor=%234EAA25&labelColor=%23000&color=%234EAA25)
-
-
 ##
 
 ### Installation

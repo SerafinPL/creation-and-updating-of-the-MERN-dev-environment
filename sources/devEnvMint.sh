@@ -91,7 +91,7 @@ hypnotix,mintchat,warpinator,onboard,webapp-manager
 	    	appIsNotInfo Signal
 		fi
 
-		exit ;;
+		;;
 
 	s | --signal)
     	#   installSignal
@@ -114,7 +114,7 @@ hypnotix,mintchat,warpinator,onboard,webapp-manager
 		fi ;;	  
 	v | --version)
 		echo "devEnvMint version "$VERSION
-		exit;;
+		;;
 	  
     ?)
     	usage
