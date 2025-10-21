@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-DIR=~/.Installers
+ENVDIR=~/.config/devEnvMint/
 
 
 . infosLogging.sh 
