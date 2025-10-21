@@ -70,7 +70,7 @@ OPTIONS:
 
 ### License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[GNU GPL 3.0](https://choosealicense.com/licenses/gpl-3.0/)
 ##
 
 ![Logo](https://kubakoder.pl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.5d6e1adf.png&w=48&q=75)
