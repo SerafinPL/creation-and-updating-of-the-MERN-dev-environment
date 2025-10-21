@@ -1,9 +1,5 @@
 #!/bin/bash
 
-
-# Passing arguments to a function
-
-
 appIsInfo(){
    	echo -e "Application "$1" exist, check version:"
 	echo ""
@@ -79,18 +75,23 @@ gitCredQuestion(){
 
 	while true; do
 
-	read -p "Fill Your github login" login
+	read -p "Fill Your github login: " login
 	
 
-	read -p "Fill Your github e-mail" mail
-	echo ok, we will proceed with $login and $mail.
+	read -p "Fill Your github e-mail: " mail
+	echo will we proceed with:
+	echo login: $login 
+	echo e-mail: $mail
+	
+	read -p "Do You agree? (y/n) " yn
 
-	case $login in 
+
+	case $yn in 
 		[yY] ) 
-			echo ok, we will proceed with $login;
+			echo ok, we will proceed with $login and $mail.;
 			break;;
 		[nN] ) 
-			echo exiting...;
+			echo ok, exiting...;
 			exit;;
 		* ) echo invalid response;;
     esac
@@ -101,8 +102,7 @@ gitCredQuestion(){
 
 usage(){ 
     cat << EOF
-usage: $0 [-h | -?] | [-a] [-b] [-c] [-d] [-g] [-k] [-r] [-s] [-v] |
-[-abcdgkrsv]
+usage: $0 [-h | -?] | [-abcdgkrsv]
 
 This script install some core programs for developers work with javascript.
 
