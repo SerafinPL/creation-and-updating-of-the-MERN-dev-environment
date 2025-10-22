@@ -15,7 +15,7 @@ VERSION=0.0.7
 PARAM=
 # OPTION=
 # FORCE=
-DIRINST=~/.Installers/dwAgent
+DIRINST=$ENVDIR/dwAgent
 
 while getopts “bcdghkrswv” PARAM
 do
