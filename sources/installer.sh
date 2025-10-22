@@ -19,6 +19,13 @@ installCode() {
 }
 # -d
 installCore() {
+	echo 'Install Core Programs:
+htop,terminator,speedometer,mc,git,nodejs,npm,cmatrix,xfce4-clipman-plugin,progress
+
+and UnInstall waste Programs:
+hypnotix,mintchat,warpinator,onboard,webapp-manager
+'
+	installQuestion 
     ins-Core
 }
 # -g

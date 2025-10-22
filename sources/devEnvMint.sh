@@ -1,16 +1,23 @@
 #!/bin/bash
 
 
-ENVDIR=~/.config/devEnvMint/
 
+
+
+ENVDIR=~/.config/devEnvMint/
+SOURCES=sources
+
+VERSION=0.0.7
+
+ echo ""
+ cd $ENVDIR$SOURCES
+ echo $ENVDIR$SOURCES
 
 . infosLogging.sh 
 . installer.sh
 . checkPrograms.sh
 
-VERSION=0.0.7
-
- echo ""
+echo "needed files are included"
 
 PARAM=
 # OPTION=
@@ -44,13 +51,7 @@ do
 			installCode
 		fi ;;
 	d | --defaults)
-		echo 'Install Core Programs:
-htop,terminator,speedometer,mc,git,nodejs,npm,cmatrix,xfce4-clipman-plugin,progress
-
-and UnInstall waste Programs:
-hypnotix,mintchat,warpinator,onboard,webapp-manager
-'
-		installQuestion 
+	
 		installCore ;;		
     g | --git)
     	addGitCred ;;
@@ -104,7 +105,7 @@ hypnotix,mintchat,warpinator,onboard,webapp-manager
 		fi ;;
 	w | --dwagent)
 		if [ -d "$DIRINST" ]; then
-	  	  appIsInfo dwAgent
+	  	  	appIsInfo dwAgent
 			echo $DIRINST
 		# ls $DIRINST
   		else
