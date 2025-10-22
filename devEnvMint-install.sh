@@ -1,16 +1,18 @@
 
 
 FIRSTPATH=`pwd`
-DIRECTORY='devEnvMint'
+ENVDIR=~/.config/devEnvMint/
 
-cd ~/.config/
-if [ ! -d "$DIRECTORY" ]; then
+if [ ! -d "$ENVDIR" ]; then
 
-  mkdir devEnvMint
+  mkdir $ENVDIR
 
 fi
-cd devEnvMint
-# cp $FIRSTPATH/sources $DIRECTORY
+cd $ENVDIR
+
+cp -r $FIRSTPATH"/sources" $ENVDIR
+cp $FIRSTPATH"/readme.md" $ENVDIR
+cp $FIRSTPATH"LICENSE"
 
 if [ ! -f  ~/.bash_aliases ]; then   
 	touch ~/.bash_aliases
