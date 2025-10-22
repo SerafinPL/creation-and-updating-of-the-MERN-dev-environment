@@ -10,9 +10,23 @@ if [ ! -d "$ENVDIR" ]; then
 fi
 cd $ENVDIR
 
-cp -r $FIRSTPATH"/sources" $ENVDIR
-cp $FIRSTPATH"/readme.md" $ENVDIR
-cp $FIRSTPATH"LICENSE"
+if [ -d "$$FIRSTPATH""/sources" ]; then
+	echo "coping sources files"
+  cp -r $FIRSTPATH"/sources" $ENVDIR
+fi
+
+# cp -r $FIRSTPATH"/sources" $ENVDIR
+if [ -f "$$FIRSTPATH""/readme.md" ]; then
+	echo "coping readme.md"
+  cp $FIRSTPATH"/readme.md" $ENVDIR
+fi
+# cp $FIRSTPATH"/readme.md" $ENVDIR
+
+if [ -f "$$FIRSTPATH""/LICENSE" ]; then
+	echo "coping LICENSE"
+	cp $FIRSTPATH"LICENSE" $ENVDIR
+fi
+# cp $FIRSTPATH"LICENSE" $ENVDIR
 
 if [ ! -f  ~/.bash_aliases ]; then   
 	touch ~/.bash_aliases

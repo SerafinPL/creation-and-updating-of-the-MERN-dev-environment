@@ -115,8 +115,7 @@ do
 		fi ;;	  
 	v | --version)
 		echo "devEnvMint version "$VERSION
-		;;
-	  
+		;;	  
     ?)
     	usage
     	exit;;
