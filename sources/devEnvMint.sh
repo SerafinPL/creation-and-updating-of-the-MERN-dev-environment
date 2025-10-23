@@ -1,9 +1,5 @@
 #!/bin/bash
 
-
-
-
-
 ENVDIR=~/.config/devEnvMint/
 SOURCES=sources
 
